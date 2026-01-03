@@ -15,7 +15,7 @@ function Form() {
   const [submitted , setSubmitted] = useState(false);
 
   const showData = async () => {
-    const res = await axios.get("http://localhost:5000/api/get");
+    const res = await axios.get("https://contact-management-pj1q.onrender.com/api/get");
     console.log(res.data);
     setData(res.data);
   }
@@ -63,7 +63,7 @@ function Form() {
     }
     setSubmitted(true);
     try{
-        await axios.post("http://localhost:5000/api/send" , form);
+        await axios.post("https://contact-management-pj1q.onrender.com/api/send" , form);
         Swal.fire("Thanks for contact us !");
         setForm({
           name:'', email:'', mobile:'', message:''
