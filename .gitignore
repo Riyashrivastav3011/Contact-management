@@ -1,0 +1,10 @@
+# Backend
+Backend/node_modules/
+Backend/.env
+
+# Frontend
+Frontend/todo/node_modules/
+Frontend/todo/dist
+
+# Common
+.env
